@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    background-color: #eff3ff;
+}
+
+.poke__container {
+    width: 350px;
+    margin: 15px 0;
+    padding: 0 15px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#poke__card {
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-animation: appearance 2s ease-in-out;
+            animation: appearance 2s ease-in-out;
+}
+
+#poke__card img {
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+}
+
+#poke__card h1 {
+    text-align: center;
+}
+
+.poke__hp {
+    width: 80px;
+    background-color: #d56464;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.poke__name {
+    text-align: center;
+    font-weight: 600;
+}
+
+.poke__types {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.poke__params {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.poke__params > span {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 5px;
+    border-radius: 15px;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.poke__params span > span {
+    font-weight: 800;
+}
+
+.poke__stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+}
+
+.poke__stats span > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-weight: 800;
+}
+
+.poke__stats span {
+    color: #404060;
+}
+
+.poke__types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+#poke__btn {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #101010;
+    color: #ffffff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out, -webkit-transform .5s ease-in-out;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out, -webkit-transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
+    transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
+    transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+#poke__btn:focus {
+    outline: transparent;
+}
+
+#poke__btn:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #404060;
+}
+
+#poke__btn:active {
+    background-color: #404060;
+    color: goldenrod;
+}
